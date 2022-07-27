@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: lightskyblue;
+        font-family: Helvetica, Arial, sans-serif;
+        margin: 0;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      header {
+        background-color: rgb(221, 239, 255);
+        padding: 1.5rem;
+        text-align: center;
+      }
+
+      .container {
+        padding: 5rem;
+      }
+
+      .card {
+        background-color: #fff;
+        border: 3px solid rgb(18, 164, 255);
+        border-radius: 1rem;
+        margin: 0 auto;
+        padding: 1.5rem;
+        position: relative;
+        width: 300px;
+      }
+
+      .card img {
+        border-radius: 1rem;
+        border: 3px solid black;
+      }
+
+      .original-price {
+        text-decoration: line-through;
+      }
+
+      .discounted-price {
+        color: tomato;
+        font-weight: 700;
+      }
+
+      .button {
+        border-radius: 32px;
+        display: inline-block;
+        background-color: tomato;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+      }
+
+      .align-center {
+        text-align: center;
+      }
+
+      .offer {
+        background-color: rgb(0, 129, 97);
+        border-radius: 32px;
+        color: #fff;
+        padding: 0.75rem 1.25rem;
+        position: absolute;
+        right: -1rem;
+        top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Shop</h1>
+      <h2>Products</h2>
+    </header>
+    <div class="container">
+      <div class="card">
+        <img src="images/car.jpg" alt="A yellow car" />
+        <h3>Car</h3>
+        <p>Amazing vehicle</p>
+        <p>
+          <span class="original-price">19.99€</span>
+          <span class="discounted-price">14.99€</span>
+        </p>
+
+        <div class="align-center">
+          <a class="button" href="#">View product</a>
+        </div>
+        <div class="offer">Best deal!</div>
+      </div>
+    </div>
+  </body>
+</html>
